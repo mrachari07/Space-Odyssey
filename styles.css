@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  color: rgba(255, 255, 255, 0.8); /* Transparent text */
+  background: black;
+}
+
+.content {
+  text-align: center; /* Centers the text horizontally */
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.content h1 {
+  font-size: 5em;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.5em;
+  line-height: 1.6;
+  margin: 10px;
+  max-width: 800px; /* Adjust this to your preference */
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1, h2, p, a {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2em;
+  margin: 0 10px;
+}
+
+a:hover {
+  color: white;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup:target {
+  display: flex;
+}
+
+.popup-content {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  color: white;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+}
+
+.popup-content h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.popup-content p {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.popup-content audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.about-hover {
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.about-hover:hover {
+  color:#FFFAFA;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7), /* Soft gold glow */ 
+  0 0 20px rgba(255, 215, 0, 0.6), 
+  0 0 30px rgba(255, 215, 0, 0.5),
+  0 0 40px rgba(255, 215, 0, 0.4), 
+  0 0 50px rgba(255, 215, 0, 0.3);
+}
+
+.contact-hover {
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.contact-hover:hover {
+  color: #FFFAFA; 
+  text-shadow: 0 0 10px #32a852, 0 0 15px #28a745; 
+}
+
+.photos-link {
+  transition: color 0.3s ease;
+}
+
+.photos-link:hover {
+  color:#FFFAFA; 
+  text-shadow: 0 0 10px #FF00FF, 0 0 15px #FF00FF; /* Glow effect */
+}
+
+.photos-hover {
+  color:#FFFAFA;
+  text-shadow: 0 0 3px #ff7f00, 0 0 5px #ff7f00, 0 0 10px #ff7f00, 0 0 15px #ff7f00, 0 0 20px #ff7f00; /* Glow effect */
+}
+
+.videos-link {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.videos-link:hover {
+  color: #FFFAFA;
+  text-shadow: 0 0 10px #800000, 0 0 15px #800000, 0 0 20px #800000, 0 0 25px #800000; /* Glow effect */
+}
+
+
+.videos-hover{
+  color:#FFFAFA ; 
+  text-shadow: 0 0 10px #C2FFC7; /* Glow effect */
+}
+
+
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about {
+  background-image: url(spacebackground.jpg);
+}
+
+.about h1, .about p {
+  color:#FFFAFA;
+  text-shadow: 0 0 20px #c95eff, 0 0 40px #d54aff; /* Glow effect */
+}
+
+.about p {
+  font-size: 1.4em; /* Large text */
+  max-width: 700px;
+  line-height: 1.8;
+}
+
+.photos {
+  background-image: url('photosbackground.jpg');
+}
+
+.videos {
+  background: url('videobackground.jpg');
+}
+
+.contact {
+  background-image: url('contactusbackground.jpg');
+}
+
+.contact h1, .contact p {
+  font-family: 'Arial', sans-serif;
+  color: #FFFAFA; 
+  text-shadow: 0 0 10px #32a852, 0 0 15px #28a745; /* Glow effect */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  z-index: 10;
+}
+
+nav a {
+  margin: 0 15px;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2em;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+
+.photo-gallery { 
+  display: flex; /* Use flexbox to create a horizontal stack */ 
+  justify-content: center; /* Center the gallery horizontally */
+   align-items: center; /* Center items vertically within the gallery */ 
+   gap: 10px; /* Space between images */ 
+   padding: 20px; 
+  } 
+  .gallery-item {
+     max-width: 100%;
+     width: 200px; /* Make sure images are responsive */ 
+     height: 200px; /* Maintain aspect ratio */ 
+     border-radius: 8px; /* Optional: Add rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+      transition: transform 0.3s ease; /* Smooth transition for hover effect */
+     } 
+     .gallery-item:hover { 
+      transform: scale(1.05); /* Scale up the image slightly on hover */
+     }
+
+
